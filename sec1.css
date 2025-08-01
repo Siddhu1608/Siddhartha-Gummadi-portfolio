@@ -26,8 +26,7 @@
   border: 3px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box,
               conic-gradient(from 0deg, #003366, #00c3ff, #ff5f6d, #003366) border-box;
-  box-shadow: 0 18px 40px rgba(0,0,0,.16);
-  transition: transform .45s ease, box-shadow .45s ease, filter .45s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
 }
 
 .sec-1-1::before {
@@ -38,16 +37,10 @@
   border-radius: 50%;
   z-index: -1;
   background:
-    radial-gradient(40% 40% at 25% 25%, rgba(0,51,102,.22), transparent 60%),
-    radial-gradient(45% 45% at 75% 75%, rgba(255,95,109,.18), transparent 65%);
+    radial-gradient(40% 40% at 25% 25%, rgba(0, 51, 102, 0.22), transparent 60%),
+    radial-gradient(45% 45% at 75% 75%, rgba(255, 95, 109, 0.18), transparent 65%);
   filter: blur(14px);
   transform: scale(1.05);
-}
-
-.sec-1-1 img:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 26px 60px rgba(0,0,0,.22);
-  filter: saturate(1.05);
 }
 
 .sec-1-2 {
@@ -115,7 +108,7 @@ p {
 @media (max-width: 1024px) {
   .sec1 {
     flex-direction: column;
-    padding: 0;
+    padding: 100px 0 0 0;
     height: auto;
   }
 
@@ -126,6 +119,8 @@ p {
 
   .sec-1-2 {
     align-items: center;
+    text-align: center;
+    padding: 0 15px;
     padding-bottom: 50px;
   }
 
@@ -143,11 +138,13 @@ p {
   .sec1 {
     flex-direction: column;
     height: auto;
+    padding-top: 100px;
     padding-bottom: 60px;
   }
 
   h1 {
     font-size: 40px;
+    width: 100%;
   }
 
   p {
@@ -155,7 +152,7 @@ p {
   }
 
   .sec-1-1 {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 0px;
   }
 
@@ -166,5 +163,8 @@ p {
 
   .sec-1-2 {
     align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    gap: 15px;
   }
 }
